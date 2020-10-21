@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="css/background.css" />
+  </head>
+  <body
+    onkeydown="spacePress(event)"
+    onkeyup="spaceRelease(event)"
+    onmousemove="movemouse(event)"
+  >
+    <div id="screen">
+      <div id="pbar"><div id="pbarspan">0</div></div>
+      <div><p id="score">score</p></div>
+      <canvas id="backCanvas"></canvas>
+      <canvas id="mainCanvas"></canvas>
+    </div>
+    <img id="fire" src="images/fire.png" style="display: none" />
+    <div id="level">LEVEL-1</div>
+    <div id="text">UNSTOPPABLE</div>
+    <div id="instruct">
+      * HOLD SPACEBAR TO INCREASE POWER, RELEASE TO SHOOT ACC. TO ANGLE.*
+    </div>
+
+    <script src="javascript/game.js"></script>
+    <script src="javascript/background.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
